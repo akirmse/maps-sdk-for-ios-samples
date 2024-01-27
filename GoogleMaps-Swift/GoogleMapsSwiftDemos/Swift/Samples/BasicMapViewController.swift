@@ -40,6 +40,9 @@ class BasicMapViewController: UIViewController {
       statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
     ])
+      
+    let layer = WeatherRadarLayer()
+    layer.enable(map: mapView)
   }
 }
 
